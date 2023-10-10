@@ -1,0 +1,130 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+
+  .alignment {
+    display: flex;
+    /* Use flexbox for alignment */
+    justify-content: space-evenly;
+    /* Add space between Signin and Signup */
+    align-items: center
+    
+  }
+
+  .alignment.button{
+      background-color: var(--primary-color-light);
+      color: var(--wight-color);
+      border: none;
+      font-size: 16px;
+      font-weight: 500;
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+      width: 100px;
+      padding: 15px 0;
+      cursor: pointer;
+      transition: all 0.4s ease-in-out;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -ms-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+  
+      text-transform: capitalize;
+      letter-spacing: 0.5px;
+      margin-top: 15px;
+  
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column-reverse;
+    }
+
+    .left {
+      flex: 1;
+
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        font-size: 35px;
+        font-weight: 600;
+
+        @media screen and (max-width: 800px) {
+          font-size: 30px;
+        }
+
+        span {
+          color: var(--primary-color);
+        }
+      }
+
+      p {
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+
+        @media screen and (max-width: 800px) {
+          font-size: 17px;
+        }
+      }
+
+      button {
+        background-color: var(--primary-color-light);
+        color: var(--wight-color);
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        width: 220px;
+        padding: 15px 0;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+
+        text-transform: capitalize;
+        letter-spacing: 0.5px;
+        margin-top: 15px;
+
+        &:hover {
+          background-color: var(--primary-color-dark);
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+      height: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 80%;
+
+        @media screen and (max-width: 800px) {
+          width: 60%;
+        }
+      }
+    }
+  }
+}

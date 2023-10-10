@@ -1,0 +1,131 @@
+.pleasure {
+  width: 100vw;
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+
+    display: flex;
+    gap: 20px;
+
+    .left {
+      flex: 8;
+
+      .title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 30px;
+
+        img {
+          width: 90px;
+        }
+
+        h1 {
+          background-color: var(--primary-color);
+          color: var(--wight-color);
+          font-size: 25px;
+          font-weight: 500;
+          text-transform: capitalize;
+
+          padding: 5px 10px;
+          width: max-content;
+          border-radius: 30px;
+          -webkit-border-radius: 30px;
+          -moz-border-radius: 30px;
+          -ms-border-radius: 30px;
+          -o-border-radius: 30px;
+        }
+      }
+
+      h2 {
+        font-size: 25px;
+        color: var(--primary-color);
+        margin-bottom: 20px;
+      }
+
+      .lessons {
+        margin: 30px 0;
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .lesson {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          span {
+            width: 10px;
+            height: 10px;
+            background-color: var(--primary-color-dark);
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+          }
+          .lessonTitle {
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            border-bottom: 1px solid transparent;
+
+            &:hover {
+              color: var(--primary-color-dark);
+              border-bottom: 1px solid var(--primary-color);
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      flex: 4;
+
+      @media screen and (max-width: 992px) {
+        display: none;
+      }
+
+      .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 30px;
+
+        img {
+          width: 80%;
+        }
+      }
+
+      .quote {
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        border: 1px solid var(--primary-color);
+
+        .text {
+          font-size: 15px;
+        }
+
+        .other {
+          text-align: right;
+          font-size: 13px;
+          font-style: italic;
+          color: var(--primary-color-dark);
+        }
+      }
+    }
+  }
+}

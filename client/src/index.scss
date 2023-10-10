@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+:root {
+  --primary-color: #5c1dbc;
+  --primary-color-light: #6c33c2;
+  --primary-color-dark: #521aa9;
+  --dark-color: #333;
+  --wight-color: #fff;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  caret-color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}

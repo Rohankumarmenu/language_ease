@@ -1,0 +1,38 @@
+.underCons {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 400px;
+    height: 300px;
+  }
+
+  p {
+    margin: 15px 0;
+  }
+
+  button {
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: var(--primary-color);
+    color: var(--wight-color);
+    border: none;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: var(--primary-color-dark);
+    }
+  }
+}
